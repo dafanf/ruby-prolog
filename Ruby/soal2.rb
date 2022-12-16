@@ -53,26 +53,26 @@ class Cupang < Ikan
 end
 
 puts "Test Class Ikan"
-objek = Ikan.new(5, "M")
-objek.printUmur
-objek.printJK
-objek.printSuara
+ikan = Ikan.new(5, "M")
+ikan.printUmur
+ikan.printJK
+ikan.printSuara
 
 puts "\nTest 1"
-objek = Cupang.new(3.5, "F", "Si Dua Warna", "HalfMoon")
-objek.printJenis
-objek.printJK
-objek.printNama
-objek.printSuara
-objek.printUmur
-objek.isDewasa?
+cupang1 = Cupang.new(3.5, "F", "Si Dua Warna", "HalfMoon")
+cupang1.printJenis
+cupang1.printJK
+cupang1.printNama
+cupang1.printSuara
+cupang1.printUmur
+cupang1.isDewasa?
 
 puts "\nTest 2"
 
-objek2 = Cupang.new(6.2, "M", "Si Biru Putih", "PK Blue Rim")
-objek2.printJenis
-objek2.printJK
-objek2.printNama
-objek2.printSuara
-objek2.printUmur
-objek2.isDewasa?
+cupang2 = Cupang.new(6.2, "M", "Si Biru Putih", "PK Blue Rim")
+cupang2.printJenis
+cupang2.printJK
+cupang2.printNama
+cupang2.printSuara
+cupang2.printUmur
+cupang2.isDewasa?
