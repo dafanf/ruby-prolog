@@ -12,8 +12,12 @@ class Mobil
     end
 
     def kurangiKecepatan(penguranganKecepatan)
-        @kecepatan -= penguranganKecepatan
+        if @kecepatan - penguranganKecepatan < 0
+            puts "Anda tidak bisa mengurangi kecepatan lebih dari 0 km/jam"
+        else
+            @kecepatan -= penguranganKecepatan
         puts "Anda menginjak rem dan memperlambat #{penguranganKecepatan} km/jam"
+        end
     end
 
     def matikanMesin
@@ -27,6 +31,7 @@ class Mobil
         puts "Kecepatan anda sekarang #@kecepatan km/jam"
     end
 end
+
 mobil1 = Mobil.new("Toyota", "Merah", 2010)
 mobil1.tambahKecepatan(20)
 mobil1.printKecepatan
@@ -37,4 +42,5 @@ mobil1.printKecepatan
 mobil1.matikanMesin
 mobil1.kurangiKecepatan(20)
 mobil1.printKecepatan
+mobil1.kurangiKecepatan(20)
 mobil1.matikanMesin
